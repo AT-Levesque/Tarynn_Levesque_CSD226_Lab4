@@ -33,7 +33,14 @@ public class AccountController {
     @Autowired
     JwtTokenUtil jwtUtil;
 
-//    @PostMapping("/test_form")
+    private final AccessToken token;
+
+    public AccountController(AccessToken accessToken) {
+        this.token = accessToken;
+    }
+
+
+//        @PostMapping("/test_form")
 //    public String test_form(@ModelAttribute Account account, Model model) {
 //        model.addAttribute("email", account);
 //        return "result";
@@ -50,6 +57,7 @@ public class AccountController {
             String accessToken = jwtUtil.generateAccessToken(account);
             System.out.println("AccessToken: "+accessToken);
 //            model.addAttribute("token", accessToken);
+            token.setAccessToken(accessToken);
 
             AuthResponse response = new AuthResponse(account.getEmail(), accessToken);
             return ResponseEntity.ok().body(response+"<script>alert('setting var \"accessToken\"');var accessToken='"+accessToken+"'</script>");
