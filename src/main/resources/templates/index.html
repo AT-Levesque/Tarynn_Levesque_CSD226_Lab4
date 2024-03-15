@@ -108,18 +108,15 @@
     <p>Footer Text</p>
 </footer>
 <script>
-    // document.body.addEventListener('htmx:configRequest', function(evt) {
-    //     // evt.detail.parameters['auth_token'] = "getAuthToken() parameter"; // add a new parameter into the request
-    //     evt.detail.headers["Authorization"] = "Bearer ${token}"; // add a new header into the request
-    // });
-    function getString(){
-//'{"Authorization" : +"Bearer th:text="${token}""}'
-        alert("{\"String\":\"this is a string\"}");
-        return "{\"String\":\"this is a string\"}";
-    }
-    localStorage.setItem("header", "{'Authorization' : 'Bearer this is the token'}");
-    string="Bearer th:text=\"${token}\"";
-    localStorage.setItem("accessToken", string);
+    document.body.addEventListener('htmx:configRequest', function(evt) {
+        // evt.detail.parameters['auth_token'] = "getAuthToken() parameter"; // add a new parameter into the request
+        alert(accessToken)
+        evt.detail.headers["Authorization"] = "Bearer "+accessToken; // add a new header into the request
+    });
+
+    // localStorage.setItem("header", "{'Authorization' : 'Bearer this is the token'}");
+    // string="Bearer th:text=\"${token}\"";
+    // localStorage.setItem("accessToken", string);
 </script>
 
 </body>
