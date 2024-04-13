@@ -1,6 +1,6 @@
-package csd226.lecture8.repositories;
+package csd226.lab3.repositories;
 
-import csd226.lecture8.data.Registry;
+import csd226.lab3.data.Registry;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

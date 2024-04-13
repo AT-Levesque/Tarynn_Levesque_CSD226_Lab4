@@ -1,12 +1,10 @@
-package csd226.lecture8;
+package csd226.lab3;
 
-import csd226.lecture8.data.AccessToken;
+import csd226.lab3.data.AccessToken;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
-
-import javax.xml.crypto.Data;
 
 @SpringBootApplication
 public class Lecture8Application {

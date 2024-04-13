@@ -1,4 +1,4 @@
-package csd226.lecture8.data;
+package csd226.lab3.data;
 
 import jakarta.persistence.*;
 

@@ -1,5 +1,5 @@
-package csd226.lecture8.security;
-import csd226.lecture8.data.Account;
+package csd226.lab3.security;
+import csd226.lab3.data.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;

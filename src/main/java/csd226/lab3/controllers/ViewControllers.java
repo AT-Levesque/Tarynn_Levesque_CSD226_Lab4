@@ -1,6 +1,6 @@
-package csd226.lecture8.controllers;
+package csd226.lab3.controllers;
 
-import csd226.lecture8.data.AccessToken;
+import csd226.lab3.data.AccessToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;

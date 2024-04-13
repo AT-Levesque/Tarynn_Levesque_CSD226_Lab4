@@ -1,7 +1,7 @@
-package csd226.lecture8.controllers;
+package csd226.lab3.controllers;
 
-import csd226.lecture8.data.Registry;
-import csd226.lecture8.repositories.RegistryRepository;
+import csd226.lab3.data.Registry;
+import csd226.lab3.repositories.RegistryRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

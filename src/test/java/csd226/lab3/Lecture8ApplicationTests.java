@@ -1,4 +1,4 @@
-package csd226.lecture8;
+package csd226.lab3;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

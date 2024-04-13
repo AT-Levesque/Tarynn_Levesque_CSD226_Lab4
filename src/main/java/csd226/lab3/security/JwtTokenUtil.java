@@ -1,5 +1,5 @@
-package csd226.lecture8.security;
-import csd226.lecture8.data.Account;
+package csd226.lab3.security;
+import csd226.lab3.data.Account;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,6 @@
-package csd226.lecture8.security;
+package csd226.lab3.security;
 
-import csd226.lecture8.repositories.AccountRepository;
+import csd226.lab3.repositories.AccountRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

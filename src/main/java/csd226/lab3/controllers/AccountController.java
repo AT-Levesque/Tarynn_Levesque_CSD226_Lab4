@@ -1,21 +1,17 @@
-package csd226.lecture8.controllers;
+package csd226.lab3.controllers;
 
-import csd226.lecture8.data.Account;
-import csd226.lecture8.repositories.AccountRepository;
-import csd226.lecture8.security.JwtTokenUtil;
-import jakarta.validation.Valid;
+import csd226.lab3.data.Account;
+import csd226.lab3.repositories.AccountRepository;
+import csd226.lab3.security.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import csd226.lecture8.data.*;
+import csd226.lab3.data.*;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.http.HttpStatus;
 
 import java.util.ArrayList;

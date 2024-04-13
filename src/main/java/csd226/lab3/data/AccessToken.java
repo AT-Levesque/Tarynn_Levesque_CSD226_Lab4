@@ -1,4 +1,4 @@
-package csd226.lecture8.data;
+package csd226.lab3.data;
 
 public class AccessToken {
     private String accessToken;
