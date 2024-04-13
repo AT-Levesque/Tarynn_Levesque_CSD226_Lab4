@@ -80,9 +80,9 @@
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <p><a href="#" hx-get="/protectedPage" hx-target="#home">Protected Page</a></p>
-            <p><a href="#" hx-get="/unProtectedPage" hx-target="#home">Un Protected Page</a></p>
-            <p><a href="#" hx-get="/protectedPage" hx-target="#home" hx-headers='{"Authorization": "Bearer js:getString()"}'>Protected Page using headers...</a></p>
+            <p><a href="/staffcontent" hx-get="/protectedPage" hx-target="#home">Protected Page</a></p>
+            <p><a href="/publiccontent" hx-get="/unProtectedPage" hx-target="#home">Un Protected Page</a></p>
+            <p><a href="/staffcontent" hx-get="/protectedPage" hx-target="#home" hx-headers='{"Authorization": "Bearer js:getString()"}'>Protected Page using headers...</a></p>
             <p><a href="#">Link</a></p>
             <p><a href="#">Link</a></p>
         </div>
@@ -108,11 +108,11 @@
     <p>Footer Text</p>
 </footer>
 <script>
-    document.body.addEventListener('htmx:configRequest', function(evt) {
-        // evt.detail.parameters['auth_token'] = "getAuthToken() parameter"; // add a new parameter into the request
-        alert(accessToken)
-        evt.detail.headers["Authorization"] = "Bearer "+accessToken; // add a new header into the request
-    });
+        document.body.addEventListener('htmx:configRequest', function(evt) {
+            // evt.detail.parameters['auth_token'] = "getAuthToken() parameter"; // add a new parameter into the request
+            alert(accessToken)
+            evt.detail.headers["Authorization"] = "Bearer "+accessToken; // add a new header into the request
+        });
 
     // localStorage.setItem("header", "{'Authorization' : 'Bearer this is the token'}");
     // string="Bearer th:text=\"${token}\"";
